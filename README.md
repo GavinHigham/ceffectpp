@@ -18,6 +18,7 @@ To generate source and header files:
     /usr/local/bin/ceffectpp -h shaders/*.vs shaders/*.fs shaders/*.gs > effects.h
 
 ceffectpp is best used as a part of the make process for your project.
+Example output can be found in the example_output folder.
 	
 ###Compiling and Installing###
 The following command will build ceffectpp and stick it in your /usr/local/bin/:
@@ -26,4 +27,4 @@ The following command will build ceffectpp and stick it in your /usr/local/bin/:
 	
 ###Motivation###
 
-I wrote this library in the course of making a 3D game engine in C (still a work in progress). I wanted a simple and fast way to make my engine "aware" of shader files dropped in a folder and given similar names, without having to manually specify in code what my shaders were called and what their attributes / uniforms were.
+I wrote this tool in the course of making a 3D game engine in C (still a work in progress). I wanted a simple and fast way to make my engine "aware" of shader files dropped in a folder and given similar names, without having to manually specify in code what my shaders were called and what their attributes / uniforms were.
