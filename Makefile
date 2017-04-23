@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -c -std=c99 -O3
+CFLAGS = -Wall -c -std=c11 -O3
 OBJECTS = ceffectpp.o table.o print_effect.o
 EXE = ceffectpp
 

@@ -46,7 +46,7 @@ int strptrcmp(const void *str1, const void *str2)
 
 void store_path(char *path, enum shader_type type)
 {
-	char newpath[strlen(path)];
+	char newpath[strlen(path)+1];
 	strcpy(newpath, path);
 	char *c = strrchr(newpath, '.'); //Find the file extension.
 	*c = '\0'; //Insert only the path up to the extension, not including it.
