@@ -168,10 +168,10 @@ int main(int argc, char **argv)
 		printf("#include <GL/glew.h>\n");
 		print_effect_definition(ustrs, LENGTH(ustrs), astrs, LENGTH(astrs));
 		print_effect_list(progstrs, LENGTH(progstrs));
-		printf("union effect_list effects;\n\n");
-		printf("const char *uniform_strings[%lu];\n", LENGTH(ustrs));
-		printf("const char *attribute_strings[%lu];\n", LENGTH(astrs));
-		printf("const char *shader_file_paths[%lu];\n\n", LENGTH(pathstrs));
+		printf("extern union effect_list effects;\n\n");
+		printf("extern const char *uniform_strings[%lu];\n", LENGTH(ustrs));
+		printf("extern const char *attribute_strings[%lu];\n", LENGTH(astrs));
+		printf("extern const char *shader_file_paths[%lu];\n\n", LENGTH(pathstrs));
 		printf("#endif\n");
 	}
 
