@@ -81,7 +81,7 @@ void process_line(char *line, enum shader_type type)
 		else if ((strcmp(tok, "in") == 0) && type == VSHADER)
 			t = attributes;
 		if (t != NULL) {
-			tok = strtok(NULL, sep); //The next token is assumed to be the type.
+			strtok(NULL, sep); //The next token is assumed to be the type.
 			tok = strtok(NULL, sep); //After that comes the identifier.
 			if (tok != NULL) {
 				table_find(t, tok, true);
