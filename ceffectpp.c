@@ -66,8 +66,7 @@ void process_line(char *line, enum shader_type type)
 	if (cmt != NULL)
 		*cmt = '\0';
 	//Find and discard from any C-style comment to the end of the line.
-	//This is not correct behaviour if your comment is in the middle of the line,
-	//but why the fuck would you do that, you fucking animal?
+	//This is not correct behaviour if your comment is in the middle of the line...
 	cmt = strstr(line, "/*");
 	if (cmt != NULL)
 		*cmt = '\0';
